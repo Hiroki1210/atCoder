@@ -1,21 +1,19 @@
 #include <iostream>
+#include <iterator>
 
 int main(){
 
     using namespace std;
 
-    int num;
+    string s;
+    cin >> s;
+
+    //点数を入れる変数の準備
     int score = 0;
-    cin >> num;
 
-    int s1 = num/100;
-    int s2 = (num-s1*100)/10;
-    int s3 = num-s1*100-s2*10;
-
-    int numbers[3] = {s1, s2, s3};
-
-    for(int i=0; i<sizeof(numbers)/sizeof(numbers[0]); i++){
-        if(numbers[i] == 1){
+    //文字列'1'が見つかったときに点数を1点追加する
+    for(int i=0; i<size(s); i++){
+        if(s[i] == '1'){
             score += 1;
         }
     }
