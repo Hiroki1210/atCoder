@@ -1,12 +1,8 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
 int main(){
-
-    int N;
-    cin >> N;
-
-    
+    int sum = 100*(100+1)/2;
+    cout << sum << endl;
 }
